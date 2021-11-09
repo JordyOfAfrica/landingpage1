@@ -1,0 +1,250 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+}
+
+.inicio{
+	width: 100%;
+	height: auto;
+	background-image: url(img/fruit.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+
+}
+
+.inicio .content{
+	width: inherit;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.inicio .content h2{
+	color: white;
+	font-size: 3em;
+	text-shadow: 2px 2px black;
+}
+
+.inicio .content p{
+	color: white;
+	margin: 30px;
+	font-size: 1.5em;
+	padding: 0 30px;
+	border-left: 10px solid orange;
+}
+
+.inicio .content .box1{
+	width: auto;
+	box-shadow: 1px 1px black;
+	padding: 20px;
+	border: 3px solid white;
+	text-align: center;
+	text-shadow: 1px 1px black;
+	border-radius: 50px;
+	font-size: 1.5em;
+	transition: 1s background;
+}
+
+.inicio .content .box1:hover{
+	background-color: orange;
+}
+
+
+.inicio .content em{
+	font-size: 1.5em;
+	color: white;
+}
+
+.videone{
+	display: flex;
+	justify-content: center;
+}
+
+.videone video{
+	margin: 20px;
+	
+}
+
+
+/*Apartado contenido*/
+
+.cuerpo h3{
+	font-size: 3em;
+	text-align: center;
+	margin: 20px;	
+}
+
+.cuerpo strong{
+	font-size: 1.5em;
+	color: orange;
+	transition: 0.5s color, 0.5s font-size;
+}
+
+
+.cuerpo .caja{
+	display: inline-block;
+	width: 90%;
+	height: auto;
+	margin: 15px;
+	border: 2px solid orange;
+	border-radius: 20px;
+	text-align: center;
+	padding: 15px;
+	font-size: 1.5em;
+	transition: 0.5s background, 0.5s border-radius, 0.5s color, 0.5s height, 0.5s font-size;
+	cursor: pointer;
+}
+
+.cuerpo .caja:hover{
+	font-size: 1.7em;
+	height: auto;
+	color: white;
+	background-color: orange;
+	border-radius: 40px;
+}
+
+.cuerpo .caja:hover strong{
+	color: black;
+}
+
+/*H2 config*/
+
+.titl{
+	color: white;
+	text-shadow: 3px 3px 5px black;
+	font-size: 2.5em;
+	padding: 20px;
+	margin: 10px 0;
+	background-attachment: fixed;
+	background-image: url(img/fondo1.jpg);
+}
+
+
+/*Texto 1*/
+.info1{
+	margin: 50px;
+	
+}
+
+.info1 p{
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+.info1 p strong{
+	font-size: inherit;
+	color: orange;
+}
+
+/*texto 1 parte inferior*/
+.centro{
+	text-align: center;
+	margin: 20px 0;
+
+	font-size: 1.5em;
+}
+
+.centro strong{
+	font-size: inherit;
+	color: orange;
+}
+
+
+/*H3 texto info1*/
+.info1 h3{
+	font-size: 3em;
+	text-align: center;
+	margin: 20px;
+}
+
+/*info1 divs*/
+.aviso{
+
+	padding: 10px;
+	border: 2px solid orange;
+	border-radius: 20px;
+
+}
+
+/*Preguntas*/
+
+.res{
+	display: none;
+}
+.pre h3{
+
+	cursor: pointer;
+	font-size: 1.8em;
+	transition: 0.8s font-size, 1s background;
+}
+
+.pre{
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.pre:hover{
+	font-size: 1.9em;
+	
+}
+
+/*Tabla*/
+table, td, tr{
+	border-collapse: collapse;
+	border: 1px dashed; black;
+
+}
+
+td{
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+/*Zona preguntas*/
+
+/*Media query inicio*/
+@media screen and (min-width: 878px){
+/*Inicio*/
+	.inicio{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.inicio .content h2{
+		font-size: 3.5em;
+		padding: 10px;
+	}
+
+	.videone video{
+		width: 520px;
+		height: 280px;
+	}
+
+	.inicio .content p{
+		font-size: 2em;
+	}
+
+/*Caja modulo*/
+	.cuerpo .caja{
+		width: 200px;
+	}
+
+/*Texto1 informativo*/
+	.info1 p{
+		font-size: 2em;
+	}
+
+/*Parte inferior texto 1*/
+	.centro{
+		font-size: 2em;
+	}
+
+}
+
